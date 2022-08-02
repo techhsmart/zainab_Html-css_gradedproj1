@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test | Slot Booking</title>
+    <link rel="stylesheet" href="css/slot-booking.css">
+    <script type="text/javascript" src="js/submitform.js"></script>
+</head>
+
+<body>
+    <form name="slot-booking" action="pharmacy-home.html" onsubmit="return submitForm()" method="post" required>
+        <div class="outer-div">
+            <div id="slot-form">
+                <article>
+                    <h2> 1. Your Contact Details</h2>
+                    <input id="fname" class="text-input" type="search" title="Full Name" placeholder="Full Name"
+                        required spellcheck="true">
+                    <input class="text-input" type="search" title="Patient Id if exists"
+                        placeholder="Patient Id if exists" spellcheck="true">
+                    </br>
+                    <input class="text-input" type="number" title="Contact Number" placeholder="Contact Number" required
+                        min="6000000000" max="9999999999" spellcheck="true">
+                    <input class="text-input" type="email" title="Email Id" placeholder="Email Id" required
+                        spellcheck="true">
+                </article>
+                </br>
+                <article>
+                    <h2> 2. Address</h2>
+                    <input class="text-input" type="search" title="H-No" placeholder="H-No" required spellcheck="true">
+                    <input class="text-input" type="search" title="Street" placeholder="Street" required
+                        spellcheck="true">
+                    </br>
+                    <input class="text-input" type="search" title="Area" placeholder="Area" required spellcheck="true">
+                    </br>
+                    <h3>District</h3>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="South Delhi">South Delhi</option>
+                        <option value="East Delhi">East Delhi</option>
+                        <option value="West Delhi">West Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Panchkula">Panchkula</option>
+                        <option value="Mohali">Mohali</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Secundrabad">Secundrabad</option>
+                        <option value="Jaipur City">Jaipur City</option>
+                        <option value="Pathankot">Pathankot</option>
+                    </select>
+                </article>
+                </br>
+                <article>
+                    <h2> 3. Choose the Test Type</h2>
+                    <p>(Check atleast one box without fail)</p>
+                    <input type="radio" id="r1" name="test" required>
+                    <label for="r1">CBC</label>
+                    <br>
+                    <input type="radio" id="r2" name="test">
+                    <label for="r2">Complete Urine</label>
+                    <br>
+                    <input type="radio" id="r3" name="test">
+                    <label for="r3">Lipid Profile</label>
+                    <br>
+                    <input type="radio" id="r4" name="test">
+                    <label for="r4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="radio" id="r5" name="test">
+                    <label for="r5">Glucose Test</label>
+                </article>
+                </br>
+                <article>
+                    <h2> 4. Do you want a hard copy of the report also?</h2>
+                    <input type="radio" id="hc1" name="copy" value="True" required>
+                    <label for="hc1">Yes</label>
+                    <br>
+                    <input type="radio" id="hc2" name="copy" value="False">
+                    <label for="hc2">No</label>
+                </article>
+                </br>
+                <article>
+                    <h2> 5. Select Your Comfortable Date and Time</h2>
+                    <label for="d1">Date: </label>
+                    <input type="date" id="d1" name="date" required>
+                    </br>
+                    </br>
+                    <label for="hc2">Time: </label>
+                    <input type="time" id="t1" name="time" required>
+                </article>
+                </br>
+            </div>
+            <div class="img-div">
+                <img src="images/lab-test/lab-test.jpg" alt="Lab Test Image">
+            </div>
+        </div>
+        <div id="btn-div">
+            <button id="reset-btn" type="reset"> Reset </button>
+            <button id="submit-btn" type="submit"> Submit </button>
+        </div>
+    </form>
+</body>
+
+</html>

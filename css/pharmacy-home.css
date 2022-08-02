@@ -1,0 +1,109 @@
+header{
+    font-weight: bolder;
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    padding: 0; 
+    text-align: center;  
+    width: 1500px;
+    background-color: rgb(97, 96, 96);
+}
+footer{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 0; 
+    bottom: 0%;   
+    width: 1500px;
+    text-align: center;
+}
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    padding: 0; 
+    top: 0%;   
+    width: 1500px;
+    z-index: 1;
+}
+#offers{ 
+    display: inline-block;
+    margin: 0;
+    padding: 0; 
+    height: 400px;    
+    width: 1500px;
+}
+.animation {
+    width: 1496px;
+    height: 100%;
+    border: 2px solid steelblue;
+}
+#products{    
+    width: 1480px;
+    margin-left: 10px;
+    margin-right: 10px;
+}  
+.covid-care{
+    position: relative;
+    display: inline-block;
+    padding: 2em;
+    height: 220px;
+    width: 280px;
+    border-radius: 10px;
+    background-color: rgba(235, 188, 235, 0.2);
+} 
+.covid-care:hover {
+    margin: 0;
+    height: 260px;
+    width: 320px;
+}
+.inner-div {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    width: 100%;
+}
+.covid-care h3 {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top:3%;
+}
+.inner-div img {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.overlay {
+    position: absolute;
+    height: 10px;
+    bottom: auto;
+    background-color: rgba(235, 188, 235,0);
+    border-radius: 5px;
+    color: blue;
+    padding: 10px;
+    text-align: left;
+}
+div > button {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 5%;
+    height: 2em;
+    width: 82%;
+    border: 2px solid rgba(55, 92, 214, 0.35);
+    border-radius: 5px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgba(235, 188, 235, 0.2);
+}
+div > button:focus {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}

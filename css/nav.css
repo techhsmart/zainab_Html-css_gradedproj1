@@ -1,0 +1,46 @@
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-menu {
+    background-color: darkgray;
+    font-size: 20px;
+}
+.main-menu > li{
+    display: inline-block;
+}
+.main-menu > li > a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+.main-menu > li > a:hover{
+    background-color: black;
+}
+.item-with-sub-menu {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute; 
+    width: 115px;
+    top: 35px;
+    left: 0px;
+    white-space: nowrap;
+    /* top | right | bottom | left */
+    padding: 0 1em 1em 1em;
+    background-color: lightgray;
+}
+.sub-menu > li {
+    margin-top: 1em; 
+    padding-top: 0;
+}
+.sub-menu > li > a{
+    text-decoration: none;
+    padding: auto; 
+}
+.item-with-sub-menu:hover .sub-menu{
+    display: block;
+}
